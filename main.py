@@ -5,4 +5,4 @@ import sys
 
 inputFile = sys.argv[1]
 
-autochord.recognize(inputFile, lab_fn=inputFile+".lab")
+autochord.recognize(inputFile, lab_fn=inputFile[:-4]+".lab")
