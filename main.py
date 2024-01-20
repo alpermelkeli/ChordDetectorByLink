@@ -1,7 +1,6 @@
-import autochord
-
 import sys
 
+import autochord
 
 inputFile = sys.argv[1]
 
