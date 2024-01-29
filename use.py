@@ -3,14 +3,14 @@ import requests
 # Set the URL of your Flask app
 url = "http://192.168.1.39:5000/recognize"
 
-# Specify the path to the .wav file you want to upload
-file_path = "C:/Users/alper/OneDrive/Masaüstü/file.wav"
+# Specify the YouTube video link you want to recognize
+youtube_link = "https://www.youtube.com/watch?v=r6xw6jlFlJg"
 
-# Create a dictionary to hold the file data
-files = {"file": open(file_path, "rb")}
+# Create a dictionary to hold the form data
+data = {"link": youtube_link}
 
 # Make a POST request to the /recognize route
-response = requests.post(url, files=files)
+response = requests.post(url, data=data)
 
 # Print the response content
 print(response.text)
